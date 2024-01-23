@@ -60,16 +60,16 @@ Manager permission to implement an S3 lifecycle policy. The template
 will also connect the SSM document as a remediation action for the AWS
 Config rule that was created.
 
+
+\# A) Clone the repository
 ```
-# A) Clone the repository
 git clone https://github.com/aws-samples/s3-incomplete-mpu-cleanup.git
 ```
 
+\# B) Switch to the repository's directory 
 ```
-# B) Switch to the repository's directory 
 cd s3-incomplete-mpu-cleanup
 ```
-
 
 \# C) Create a satck deploy solution
 ```
