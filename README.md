@@ -25,16 +25,16 @@ We will utilize AWS CloudFormation to provision the resources needed for this so
 The CloudFormation YAML template in this repository can be uploaded to the AWS CloudFormation console to deploy the solution stack, if you do not want to use the CLI instructions below.
 
 
-# A) Clone the repository
+### A) Clone the repository
 ```
 git clone https://github.com/aws-samples/s3-incomplete-mpu-cleanup.git
 ```
-# B) Switch to the repository's directory 
+### B) Switch to the repository's directory 
 ```
 cd s3-incomplete-mpu-cleanup
 ```
 
-# C) Create a satck deploy solution
+### C) Create a satck deploy solution
 ```
 aws cloudformation create-stack \
 	--stack-name S3-MPU-Delete \
