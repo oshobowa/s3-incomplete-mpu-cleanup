@@ -24,22 +24,23 @@ We will utilize AWS CloudFormation to provision the resources needed for this so
 
 The CloudFormation YAML template in this repository can be uploaded to the AWS CloudFormation console to deploy the solution stack, if you do not want to use the CLI instructions below.
 
-```
+
 # A) Clone the repository
 ```
 git clone https://github.com/aws-samples/s3-incomplete-mpu-cleanup.git
 ```
-
-
 # B) Switch to the repository's directory 
+```
 cd s3-incomplete-mpu-cleanup
-
+```
 
 # C) Create a satck deploy solution
+```
 aws cloudformation create-stack \
 	--stack-name S3-MPU-Delete \
 	--template-body file://s3mpu-delete.yaml --capabilities CAPABILITY_IAM
 ```
+
 
 ## Further configuration
 The config rule created by the CloudFormation template is not working as expected. Although the template set the AWS S3 Bucket resource type for the rule, testing shows the rule does not work unless the resource type is manually reselected and saved in the console. This indicates an issue with how CloudFormation and Config are interacting that needs further investigation. 
