@@ -1,4 +1,4 @@
-# Amazon S3 Incomplete Multipart Upload cleanup**
+# Amazon S3 Incomplete Multipart Upload cleanup
 
 ## Amazon Multipart Upload
 
@@ -26,7 +26,9 @@ The CloudFormation YAML template in this repository can be uploaded to the AWS C
 
 ```
 # A) Clone the repository
+```
 git clone https://github.com/aws-samples/s3-incomplete-mpu-cleanup.git
+```
 
 
 # B) Switch to the repository's directory 
